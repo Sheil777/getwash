@@ -73,6 +73,22 @@ body {
   font-style: normal;
 }
 /* ----------------------------------- */
+/* --------- My Styles ------------ */
+.button {
+  display: block;
+  width: 240px;
+  height: 60px;
+  background: #446DF6;
+  border-radius: 6px;
+  font-size: 18px;
+  line-height: 140%;
+  color: #EEEEEE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --------- My Styles ------------ */
 .header {
   margin-top: 25px;
 }
@@ -203,6 +219,7 @@ body {
     width: 100%;
     padding: 30px;
     padding-left: 90px;
+    z-index: 10;
   }
 
   .header-menu__list {
@@ -210,6 +227,7 @@ body {
   }
 
   .header-menu {
+    background: white;
     position: absolute;
     top: -400px;
     flex-basis: auto;
@@ -225,7 +243,7 @@ body {
   }
 
   .header__menu_phone {
-    top: 90px;
+    top: 84px;
   }
 
   .header__button {
@@ -248,6 +266,32 @@ body {
   .header__button2_phone {
     top: 560px;
   }
+}
+.main__container {
+  display: flex;
+}
+.main__left {
+  flex: 0 0 47%;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+.main__right {
+  flex: 0 0 53%;
+  border: 1px solid black;
+  box-sizing: border-box;
+  height: 500px;
+}
+.main__title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 125%;
+  color: #141B41;
+}
+.main__text {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 140%;
+  color: #72727E;
 }
 
 /*# sourceMappingURL=style.css.map */

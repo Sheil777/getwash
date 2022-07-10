@@ -76,4 +76,26 @@ body {
 
 /* ----------------------------------- */
 
+/* --------- My Styles ------------ */
+.button {
+    display: block;
+    width: 240px;
+    height: 60px;
+    background: #446DF6;
+    border-radius: 6px;
+
+    // font-weight: 500;
+    // font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #EEEEEE;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* --------- My Styles ------------ */
+
+
 @import "mainPage/header";
+@import "mainPage/main";
