@@ -182,6 +182,8 @@
     width: 100%;
     transition: 0.5s;
 
+    z-index: 9;
+
     &__item {
       height: 90px;
       border-bottom: 1px solid #E9ECF5;
@@ -202,6 +204,7 @@
     transition: 0.5s;
     background: #446DF6;
     color: #FFFFFF;
+    z-index: 9;
 
     &_phone {
       top: 490px;
@@ -213,6 +216,7 @@
     position: absolute;
     top: -200px;
     transition: 0.5s;
+    z-index: 9;
 
     &_phone {
       top: 560px;
