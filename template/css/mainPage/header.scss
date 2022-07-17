@@ -1,5 +1,7 @@
 .header {
   margin-top: 25px;
+  position: relative;
+  z-index: 20;
 
   &__burger {
     display: none;
@@ -87,6 +89,10 @@
   border-radius: 6px;
 }
 
+.header-menu__whiteFon {
+  display: none;
+}
+
 /* Adaptive */
 // 0
 //576px
@@ -97,6 +103,10 @@
 
 
 @media (max-width: 992px) {
+  .header {
+    position: unset;
+  }
+
   .header__burger {
     display: block;
 
@@ -176,7 +186,7 @@
   .header-menu {
     background: white;
     position: absolute;
-    top: -400px;
+    top: -140%;
 
     flex-basis: auto;
     width: 100%;
@@ -209,6 +219,7 @@
     &_phone {
       top: 490px;
     }
+
   }
 
   .header__button2 {
@@ -217,11 +228,16 @@
     top: -200px;
     transition: 0.5s;
     z-index: 9;
+    background: white;
 
     &_phone {
       top: 560px;
     }
   }
 
+  .header-menu__whiteFon {
+    display: block;
+    height: 60vh;
+  }
 }
 

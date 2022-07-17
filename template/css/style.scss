@@ -28,6 +28,10 @@ body {
     color: #000;
     font-family: "GT Eesti Pro Display";
     font-weight: 300;
+
+    &.lock {
+        overflow: hidden;
+    }
 }
 
 .wrapper {
@@ -99,3 +103,4 @@ body {
 
 @import "mainPage/header";
 @import "mainPage/main";
+@import "mainPage/start";

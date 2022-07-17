@@ -30,6 +30,9 @@ body {
   font-family: "GT Eesti Pro Display";
   font-weight: 300;
 }
+body.lock {
+  overflow: hidden;
+}
 
 .wrapper {
   min-height: 100%;
@@ -91,6 +94,8 @@ body {
 /* --------- My Styles ------------ */
 .header {
   margin-top: 25px;
+  position: relative;
+  z-index: 20;
 }
 .header__burger {
   display: none;
@@ -161,8 +166,16 @@ body {
   border-radius: 6px;
 }
 
+.header-menu__whiteFon {
+  display: none;
+}
+
 /* Adaptive */
 @media (max-width: 992px) {
+  .header {
+    position: unset;
+  }
+
   .header__burger {
     display: block;
     z-index: 15;
@@ -229,7 +242,7 @@ body {
   .header-menu {
     background: white;
     position: absolute;
-    top: -400px;
+    top: -140%;
     flex-basis: auto;
     width: 100%;
     transition: 0.5s;
@@ -265,9 +278,15 @@ body {
     top: -200px;
     transition: 0.5s;
     z-index: 9;
+    background: white;
   }
   .header__button2_phone {
     top: 560px;
+  }
+
+  .header-menu__whiteFon {
+    display: block;
+    height: 60vh;
   }
 }
 .main__container {
@@ -327,6 +346,10 @@ body {
   margin-top: 45px;
 }
 
+.main-image__front_phone {
+  display: none;
+}
+
 .main-image {
   position: relative;
   width: 100%;
@@ -356,12 +379,14 @@ body {
   }
   .main__title {
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     margin-top: 35px;
   }
   .main__text {
     text-align: center;
-    font-size: 18px;
+    font-size: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
   .main__arrow {
     display: block;
@@ -379,10 +404,13 @@ body {
   }
   .main__button {
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 40px;
+    width: 280px;
+    height: 80px;
+    font-size: 25px;
   }
 
-  .main-image__back, .main-image__front {
+  .main-image__back {
     display: none;
   }
 
@@ -393,6 +421,76 @@ body {
     top: -370px !important;
     opacity: 0.5;
   }
+
+  .main-image .main-image__front {
+    width: 120% !important;
+  }
+}
+@media (max-width: 767px) {
+  .main-image__front {
+    display: none;
+  }
+
+  .main-image__front_phone {
+    display: block;
+    width: 100vw !important;
+    left: -2.5vw !important;
+    top: 0px !important;
+    margin-top: 30px;
+  }
+}
+.start {
+  margin-top: 70px;
+}
+.start__container {
+  display: flex;
+}
+.start__left {
+  flex: 0 0 45%;
+  border: 1px solid black;
+  height: 500px;
+}
+.start__right {
+  flex: 0 0 55%;
+  border: 1px solid black;
+  height: 500px;
+}
+.start__header {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 110%;
+  /* identical to box height, or 44px */
+  /* #141B41 */
+  color: #141B41;
+}
+
+.start-item {
+  display: flex;
+  margin-top: 60px;
+  align-items: center;
+}
+.start-item__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin: 0 20px;
+  background: #F7F8FD;
+  border-radius: 6px;
+}
+.start-item__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 135%;
+  color: #141B41;
+  margin-bottom: 6px;
+}
+.start-item__text {
+  font-weight: 350;
+  font-size: 18px;
+  line-height: 135%;
+  color: #72727E;
 }
 
 /*# sourceMappingURL=style.css.map */
