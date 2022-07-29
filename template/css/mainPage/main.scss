@@ -109,6 +109,7 @@
 
     &__right {
       flex: auto;
+      height: auto;
     }
 
     &__title {
@@ -161,12 +162,16 @@
     left: -50px !important;
     top: -370px !important;
     opacity: 0.5;
+    z-index: -1;
   }
 
 
   .main-image {
     .main-image__front {
       width: 120% !important;
+      position: unset;
+      margin-left: -20%;
+      margin-top: -50px;
     }
   }
 }
@@ -177,6 +182,7 @@
   }
 
   .main-image__front_phone {
+    position: unset !important;
     display: block;
     width: 100vw !important;
     left: -2.5vw !important;
