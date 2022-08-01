@@ -440,8 +440,7 @@ body.lock {
     position: unset !important;
     display: block;
     width: 100vw !important;
-    left: -2.5vw !important;
-    top: 0px !important;
+    margin-left: -2.5vw !important;
     margin-top: 30px;
   }
 }
@@ -516,10 +515,13 @@ body.lock {
   .start__right {
     text-align: center;
   }
+  .start__left {
+    display: block;
+    overflow: hidden;
+  }
   .start__left img {
-    width: 96vw;
-    margin-left: -1vw !important;
-    margin: 0 auto;
+    width: 155%;
+    margin-left: -29% !important;
   }
 
   .start-item {

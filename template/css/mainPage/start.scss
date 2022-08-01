@@ -100,10 +100,12 @@
     }
 
     &__left {
+      display: block;
+      overflow: hidden;
+
       img {
-        width: 96vw; // 200%;
-        margin-left: -1vw !important;
-        margin: 0 auto;
+        width: 155%;
+        margin-left: -29% !important;
       }
     }
 
