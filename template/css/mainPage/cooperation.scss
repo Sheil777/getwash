@@ -1,0 +1,79 @@
+.cooperation {
+  margin-top: 30px;
+
+  &__header {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 125%;
+    color: #141B41;
+    text-align: center;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 350;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    color: #72727E;
+
+    padding: 0 160px;
+    margin-top: 20px;
+  }
+
+  &__button {
+    margin: 0 auto;
+  }
+}
+
+.coop-cards {
+  display: flex;
+  height: 200px;
+  gap: 30px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  &__item {
+    box-shadow: 0px 16px 20px rgba(20, 27, 65, 0.03);
+    border-radius: 10px;
+    padding: 0 20px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__img {
+    height: 60px;
+    width: 60px;
+    background: #F7F8FD;
+    border-radius: 6px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #141B41;
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 992px) {
+  .cooperation__text {
+    padding: 0 20px;
+  }
+
+  .coop-cards {
+    flex-direction: column;
+    height: auto;
+  }
+}
